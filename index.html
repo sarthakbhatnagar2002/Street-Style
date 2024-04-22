@@ -2,15 +2,16 @@
 
 <head>
   <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">  
 </head>
 
 <body>
-  
   <section id="header">
     <a href=""><h4 class="log">
       StreetStyle
@@ -18,13 +19,18 @@
 
     <div>
       <ul id="navbar">
+        <a href="#" id="close"><i class="uil uil-times"></i></a>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="shop.html">shop</a></li>
         <li><a href="Blog.html">Blog</a></li>
         <li><a href="About.html">About</a></li>
-        <li><a href="Contacts.html">Contacts</a></li>
-        <li><a href="cart.html"><i class="uil uil-shopping-bag"></i></a></li>
+        <li><a href="Orders.html">Orders and Returns</a></li>
+        <li id="lg-bag" ><a href="cart.html"><i class="uil uil-shopping-bag"></i></a></li>
       </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="uil uil-shopping-bag"></i></a>
+      <i id="bar" class="uil uil-bars"></i>
     </div>
   </section>
 
@@ -73,7 +79,7 @@
     <h2>New Arrivals</h2>
     <p>Summer Collection New Morden Design</p>
     <div class="pro-container">
-      <div class="pro">
+      <div class="pro" onclick="window.location.href='proinfo.html'">
         <img src="img/products/f1.jpg" alt="">
          <div class="des">
           <span>Mufti</span>
@@ -205,9 +211,9 @@
   </section>
 
   <section id="banner" class="section-m1">
-    <h4>Repair Services</h4>
+    <h4>WOO-HOOOO!</h4>
     <h2>Up to <span>80% OFF</span>All Shirts & Accessories </h2>
-    <button>Explore More</button>
+    <button class="white" >Explore More</button>
   </section>
 
   <section id="product1" class="section-p1">
@@ -361,7 +367,7 @@
   </section>
 
   <section id="banner3">
-    <div class="banner-box">
+    <div class="banner-box banner-box">
       <h2>Coolest Finds For Him</h2>
       <h3>Up to 30% Off*</h3>
     </div>
@@ -434,10 +440,12 @@
       </div>
 
     <div class="copyright">
-      <p>Copyright © 2024-2025 Yoru. All rights reserved.</p>
+      <p>Copyright © 2024-2025 Street-style. All rights reserved.</p>
     </div>
   </footer>
 
+
+  <script src="project.js"></script>
 </body>
 
 </html>
