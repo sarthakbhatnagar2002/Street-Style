@@ -100,6 +100,10 @@ body {
   width: 100%;
 }
 
+::-webkit-scrollbar{
+  width: 0;
+}
+
 /* Header start */
 
 #header {
@@ -158,6 +162,22 @@ body {
 
 #close{
   display: none;
+}
+
+#navbar input {
+  height: 4rem;
+  padding: 0 1.25em;
+  font-size: 12px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#navbar .searchbar{
+  display: flex;
+  width: 40%;
 }
 
 /* home page */
@@ -670,9 +690,15 @@ button.white {
   padding-bottom: 90px;
 }
 
+#blog .blog-contents{
+  display: flex;
+  align-items: center;
+}
+
 #blog .blog-img{
   width: 50%;
   margin-right: 40px;
+  flex-basis: 1;
 }
 
 #blog img {
@@ -684,6 +710,7 @@ button.white {
 #blog .blog-details{
   width: 50%;
   margin-right: 40px;
+  flex-basis: 1;
 }
 
 #blog .blog-details a{
@@ -720,6 +747,227 @@ button.white {
   color: #c9cbce;
   z-index: -9;
 }
+
+/* ABOUT PAGE  */
+#page-header.about-header{
+  background-image: url("img/about/banner.png");
+}
+
+#about-head{
+  display: flex;
+  align-items: center;
+}
+
+#about-head img{
+  width: 50%;
+  height: auto;
+}
+
+#about-head div{
+  padding-left: 40px;
+}
+
+#about-app{
+  text-align: center;
+}
+
+#about-app .video{
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+
+
+/* CART PAGE */
+
+
+#cart table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img{
+  width: 70px;
+}
+
+#cart table td:nth-child(1){
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2){
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3){
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+
+#cart table thead td{
+  font-weight: 700 ;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table tbody tr td{
+  padding-top: 15px;
+}
+
+#cart table tbody td{
+  font-size: 13px;
+}
+
+#cart-add{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupon{
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3{
+  padding-bottom: 15px;
+}
+
+.coupon input{
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button{
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px ;
+}
+
+#subtotal{
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#subtotal table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td{
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#page-header.order-header{
+  background-image: url("img/banner/b2.jpg");
+}
+
+/* #orders table, th, td {
+  border: 0.1px solid rgb(199, 191, 191);
+} */
+
+#order table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#order table img{
+  width: 70px;
+  margin-top: 12px;
+}
+
+#order table td:nth-child(1){
+  width: 100px;
+  text-align: center;
+}
+
+#order table td:nth-child(2){
+  width: 150px;
+  text-align: center;
+}
+
+#order table td:nth-child(3){
+  width: 250px;
+  text-align: center;
+}
+
+#order table td:nth-child(4),
+#order table td:nth-child(5){
+  width: 150px;
+  text-align: center;
+}
+
+#order table thead{
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+
+#order table thead td{
+  font-weight: 700 ;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+button.more {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: black;
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  outline: none;
+  transition: 0.2s;
+  left: 44%;
+  position: absolute;
+  margin-top: 12px;
+}
+
 
 @media (max-width: 799px) {
   #navbar {
@@ -805,7 +1053,19 @@ button.white {
   #blog .blog-details{
     width: 100%;
   }
+  #about-head img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #about-head{
+    flex-direction: column;
+  }
+  #about-app .video{
+    width: 100%;
+  }
 }
+
+
 
 @media (max-width:477px){
   #header{
@@ -901,5 +1161,25 @@ button.white {
   }
   #about-app .video{
     width: 100%;
+  }
+  #about-head{
+    flex-direction: column;
+  }
+  #about-head img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #about-head div{
+    padding-left: 0px;
+  }
+  #cart-add{
+    flex-direction: column;
+  }
+  .coupon{
+    width: 100%;
+  }
+  #subtotal{
+    width: 100%;
+    padding: 20px;
   }
 }
