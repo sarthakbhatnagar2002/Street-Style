@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex; /* Center the content vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure content fills the viewport height */
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Consistent width for login form */
+}
+
+.login-form {
+  text-align: center;
+}
+
+.logo {
+  width: 100px; /* Consistent logo size */
+  margin: 0 auto 20px; /* Center and add some bottom margin */
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold; /* Add some weight for emphasis */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px; /* Increased label size */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.form-group a {
+  color: #aaa;
+  font-size: 12px; /* Consistent font size with other elements */
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.button {
+  /* Removed unused button style definition */
+  background-color: #4caf50;
+}
