@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="project.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.1"></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-form">
+        <h4 class="log">Street-style</h4>
+        <p>LOGIN</p>
+        <form id="login-form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="login-email"
+              name="username"
+              placeholder="Enter your email"
+              value="test123@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              value="12345678"
+              placeholder="Enter your password"
+              required
+            />
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+          <div class="form-group checkbox-container">
+            <input type="checkbox" id="remember-me" name="remember-me" />
+            <label for="remember-me">Remember Me</label>
+          </div>
+          <button type="submit">LOGIN</button>
+        </form>
+
+        <p class="social-login">
+          Or login with:
+          <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#"><i class="fab fa-google"></i> Google</a>
+        </p>
+        <p class="sign-up">
+          Don't have an account? <a href="Register.html">Sign Up</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
