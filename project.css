@@ -46,7 +46,7 @@ html {
 }
 
 .normal.signup{
-  background-color: #088178;
+  background-color: #2a79e6;
   color: #fff;
   white-space: nowrap;
   border-top-left-radius: 0;
@@ -230,7 +230,7 @@ body {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
   border: 1px solid #cce7d0;
   border-radius: 4px;
   margin: 15px 0;
@@ -314,6 +314,10 @@ body {
   color: #088178;
 }
 
+#cart{
+  overflow-x: auto;
+}
+
 #product1 .pro .cart {
   width: 40px;
   height: 40px;
@@ -374,7 +378,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   background-image: url("img/banner/b17.jpg");
-  min-width: 580px;
+  width: 600px;
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -509,7 +513,6 @@ footer {
 footer .col {
   display: flex;
   flex-direction: column;
-
   align-items: flex-start;
   margin-bottom: 20px;
 }
@@ -560,7 +563,7 @@ footer .copyright {
   text-align: centre;
 }
 
-button.white {
+a.white {
   font-size: 13px;
   font-weight: 600;
   padding: 11px 18px;
@@ -568,7 +571,7 @@ button.white {
   background-color: transparent;
   cursor: pointer;
   border: 1px solid var(--color-white);
-  outline: none;
+  outline: none;  
   transition: 0.2s;
 }
 
@@ -668,7 +671,7 @@ button.white {
 
 .normal:hover{
   cursor: pointer;
-  background-color: #0b6862;
+  background-color: #07477b;
   transition: 300ms ease;
 }
 
@@ -906,6 +909,10 @@ button.white {
 /* #orders table, th, td {
   border: 0.1px solid rgb(199, 191, 191);
 } */
+
+#order{
+  overflow-x: auto;
+}
 
 #order table{
   width: 100%;
